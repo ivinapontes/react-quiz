@@ -13,7 +13,18 @@ import React, { Component } from "react";
 class AnimalSpotter extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = { animalSpotted: 0 };
+  }
+
+  spotAnimal = ( ) => {
+
+  }
+  increment = () => {
+    this.setState(previousState => {
+      return {
+        count: previousState.count + 1
+      }
+    })
   }
 
   render() {
